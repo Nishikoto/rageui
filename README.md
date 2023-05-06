@@ -40,7 +40,7 @@ end
 
 ---
 
-#### 4. Bouttons
+#### 4. Les boutons
 ```lua
 
 ```
