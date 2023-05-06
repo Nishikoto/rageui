@@ -57,5 +57,17 @@ end
 
 #### 4. Les boutons
 ```lua
-
+RageUI.Button('Button Name', 'Description Button', {
+    RightLabel = 'Label',
+    RightBadge = RageUI.BadgeStyle.Star,
+    LeftBadge = RageUI.BadgeStyle.Star,
+    Color = {HightLightColor = {R, G, B, A}, BackgroundColor = {R, G, B, A}}
+}, true, {
+    onSelected = function()
+        print('Il faut séléctionner pour utiliser le bouton.')
+    end
+    onHovered = function()
+        print('Quand on survole le bouton ça fonctionne.')
+    end
+})
 ```
