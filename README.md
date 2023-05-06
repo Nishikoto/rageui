@@ -72,5 +72,5 @@ RageUI.Button('Button Name', 'Description Button', {
     onHovered = function()
         print('Quand on survole le bouton ça fonctionne.')
     end
-})
+}, submenu)
 ```
