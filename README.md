@@ -1,2 +1,3 @@
-# rageui
-RageUI by Nishi
+# RageUI - Documentation FR - par Nishi
+
+#### 
