@@ -33,7 +33,7 @@ end
 RegisterCommand('menuCommand', function(source, args)
     openMenu()
 end)
-KeysRegister('menuCommand', 'Ouvre mon menu', 'keyboard', 'F1')
+RegisterKeyMapping('menuCommand', 'Ouvre mon menu', 'keyboard', 'F1')
 ```
 
 #### 3. Constructeur du menu
@@ -43,9 +43,10 @@ function openMenu()
         return
     end
 
-    RageUI.Visible(menu, true)
+    status = true
 
     CreateThread(function()
+        RageUI.Visible(menu, true)
         while (status) do
 
             --Code
@@ -73,4 +74,6 @@ RageUI.Button('Button Name', 'Description Button', {
         print('Quand on survole le bouton ça fonctionne.')
     end
 }, submenu)
+
+RageUI.CentralButton('title', 'description', {--[[Style]]}, true, {--[[Code]]})
 ```
