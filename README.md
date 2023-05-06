@@ -1,5 +1,20 @@
 # RageUI - Documentation FR - par Nishi
 
+#### 0. fxmanifest.lua
+```lua
+client_scritps {
+    "Nishi/src/RMenu.lua",
+    "Nishi/src/menu/RageUI.lua",
+    "Nishi/src/menu/Menu.lua",
+    "Nishi/src/menu/MenuController.lua",
+    "Nishi/src/components/*.lua",
+    "Nishi/src/menu/elements/*.lua",
+    "Nishi/src/menu/items/*.lua",
+    "Nishi/src/menu/panels/*.lua",
+    "Nishi/src/menu/windows/*.lua", 
+}
+```
+
 #### 1. Création du menu
 ```lua
 local status = false
