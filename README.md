@@ -18,7 +18,10 @@ client_scritps {
 #### 1. Création du menu
 ```lua
 local status = false
+-- Menu Principal
 local menu = RageUI.CreateMenu('title', 'description', 0, 0, textureDictionnary, textureName, R, G, B, A)
+-- Sous Menu
+local submenu = RageUI.CreateSubMenu(menu, 'title submenu', 'description submenu')
 
 menu.Closed = function()
     status = false
