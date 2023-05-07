@@ -77,3 +77,17 @@ RageUI.Button('Button Name', 'Description Button', {
 
 RageUI.CentralButton('title', 'description', {--[[Style]]}, true, {--[[Code]]})
 ```
+
+#### 5. Checkbox et List
+```lua
+-- Checkbox
+etat = false
+RageUI.Checkbox('Checkbox #1', 'Description of Checkbox #1', etat, {--[[Style]]}, {
+    onSelected = function(checked)
+    etat = checked
+
+        --code                    
+
+    end
+})
+```
