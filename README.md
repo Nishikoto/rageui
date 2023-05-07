@@ -84,9 +84,18 @@ etat = false
 RageUI.Checkbox('Checkbox #1', 'Description of Checkbox #1', etat, {--[[Style]]}, {
     onSelected = function(checked)
     etat = checked
-
         --code                    
+    end
+})
 
+indexList = 1
+RageUI.List('List #1', {'item1', 'item2', 'item3', 'item4'}, indexList, 'Description of List #1', {--[[Style]]}, true, {
+    onListChange = function(Index,item)
+        indexList = Index
+        --code
+    end,
+    onSelected = function(Index,item)
+        --code
     end
 })
 ```
