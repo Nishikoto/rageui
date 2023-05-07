@@ -99,3 +99,9 @@ RageUI.List('List #1', {'item1', 'item2', 'item3', 'item4'}, indexList, 'Descrip
     end
 })
 ```
+
+#### 6. Ligne et Séparateur
+```lua
+RageUI.Line(R, G, B, A)
+RageUI.Separator("Label")
+```
