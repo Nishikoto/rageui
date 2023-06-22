@@ -80,11 +80,13 @@ RageUI.CentralButton('title', 'description', {--[[Style]]}, true, {--[[Code]]})
 
 #### 5. Checkbox et List
 ```lua
-etat = false
+etat = false -- si vous mettez cette variable dans la fonction du menu la checkbox ne s'enregistrera pas lors de la fermeture du menu, si vous la mettez en dehors de la fonction du menu elle d'enregistrera à la fermeture de celui-ci 
 RageUI.Checkbox('Checkbox #1', 'Description of Checkbox #1', etat, {--[[Style]]}, {
-    onSelected = function(checked)
-    etat = checked
-        --code                    
+    onChecked = function()
+        etat = true
+    end,
+    onUnChecked = function()
+        etat = false
     end
 })
 
