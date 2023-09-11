@@ -2,7 +2,7 @@
 
 #### 0. fxmanifest.lua
 ```lua
-client_scritps {
+client_scripts {
     "Nishi/src/RMenu.lua",
     "Nishi/src/menu/RageUI.lua",
     "Nishi/src/menu/Menu.lua",
